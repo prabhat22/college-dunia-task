@@ -1,5 +1,4 @@
-  {
-    "colleges": [
+   [
         {
             "college_name": "Hansraj College Delhi University - 1",
             "promoted": true,
@@ -851,4 +850,4 @@
             "offertext": "Flat Rs2,000 off + upto Rs 500 wallet! to avail... LOGIN "
         }
     ]
-}
+

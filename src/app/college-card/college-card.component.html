@@ -1,0 +1,66 @@
+<div class="card">
+
+	<div class="card_image">
+		<img src="https://images.unsplash.com/photo-1562774053-701939374585?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbGVnZSUyMGNhbXB1c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" style="width:100%">
+		<div class="overlay">
+
+			<div>
+				<div class="rating">
+					<span>
+              3.9/5 
+              <br>
+              Very Good
+            </span>
+				</div>
+
+				<button class="btn">{{college.tags[0]|uppercase}}</button>
+				<button class="btn btn1">{{college.tags[1] |uppercase}}	</button>
+				<span style="position: absolute;bottom: 8px;right: 5px;color: white;font-size: 17px;">#{{college.ranking}}</span>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="card_body">
+		<div class="left_body">
+			<span class="heading"> {{college.college_name}}
+         <span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span></span>
+
+			<span class="location" style="font-size:12px">
+              {{college.nearest_place[0]}} |  <span style="color:grey">
+                {{college.nearest_place[1]}} 
+              </span>
+			</span>
+			<span style="color:deepskyblue;font-size:12px">
+              93% Match:
+            </span>
+			<span  style="font-size:12px">{{college.famous_nearest_places}}</span>
+			<div class='discount' style="font-size:14px">
+
+				<span >Flat Rs. <span style="color:deepskyblue"> 2000</span> off + upto Rs
+				<span style="color:deepskyblue">500</span> off! to
+				avail..Login</span>
+			</div>
+
+		</div>
+
+
+		<div class="right_body">
+
+			<span style="color:grey; text-decoration: line-through ;font-size: larger;"> Rs.{{college.discounted_fees}}  <span class="tag" style="font-size:11px">{{college.discount}}%</span></span>
+			<br>
+			<span class="price">Rs.{{college.original_fees}}</span>
+			<br>
+			<span style="color:grey">{{college.fees_cycle}}</span>
+			<h4 style="color:deepskyblue">{{college.amenties[0]}} + {{college.amenties[1]}}</h4>
+		</div>
+
+
+
+	</div>
+
+</div>
